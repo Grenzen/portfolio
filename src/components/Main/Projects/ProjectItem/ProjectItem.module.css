@@ -2,6 +2,7 @@
     position: relative;
     padding: 1rem;
     width: 40%;
+    max-width: 40rem;
     background-color: rgba(115, 113, 113, 0.73);
     border-radius: 1rem;
     transition: all 0.5s ease;

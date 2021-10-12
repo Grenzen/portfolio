@@ -1,0 +1,9 @@
+.footer {
+    padding: 1rem;
+    background-color: hotpink;
+}
+
+.footerContainer {
+    flex-flow: column nowrap;
+    align-items: center;
+}

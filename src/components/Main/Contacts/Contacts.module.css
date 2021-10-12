@@ -1,0 +1,23 @@
+.sectionContacts {
+    padding: 1rem;
+    background-color: darkgrey;
+}
+
+.contactsContainer {
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contactsForm {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    max-width: 70rem;
+}
+
+.contactsButton {
+    align-self: center;
+    margin: 2rem;
+    width: 20%;
+
+}

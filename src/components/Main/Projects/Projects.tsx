@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react'
+import { useTranslation } from 'react-i18next'
 import g from '../../../App.module.css'
 import s from './Projects.module.css'
 import { ProjectItem } from './ProjectItem/ProjectItem'
@@ -18,18 +19,19 @@ const projects: ProjectType[] = [
         projectImageSrc: '/assets/images/qr-menu.png',
         projectLink: 'https://qr-menu-clone-admin.herokuapp.com/dashboard',
         projectTitle: 'QR Menu',
-        projectDescription: 'Some Text',
+        projectDescription: 'qr-menu',
     },
     {
         id: v1(),
         projectImageSrc: '/assets/images/covid.png',
         projectLink: 'https://rolling-scopes-school.github.io/grenzen-JS2020Q3/covid-dashboard/',
         projectTitle: 'Covid-19 Dashboard',
-        projectDescription: 'Some Text',
+        projectDescription: 'covid-19',
     },
 ]
 
 export const Projects = React.memo(() => {
+    const { t } = useTranslation()
     const mappedProjects = useMemo(() => projects.map(el => (
         <ProjectItem
             key={ el.id }
@@ -42,9 +44,9 @@ export const Projects = React.memo(() => {
     )), [projects])
 
     return (
-        <section className={ s.sectionProjects }>
+        <section className={ s.sectionProjects } id={ 'projects' }>
             <div className={ [g.contentContainer, s.projectsContainer].join(' ') }>
-                <h2 className={ g.sectionTitle }>Проекты</h2>
+                <h2 className={ g.sectionTitle }>{ t('projects.title') }</h2>
                 <div className={ s.projectsItemsContainer }>
                     { mappedProjects }
                 </div>

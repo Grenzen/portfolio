@@ -9,6 +9,7 @@
     -webkit-box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
     -moz-box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
     box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
+    transition: all 0.3s ease;
 }
 
 .skillItemImage {
@@ -17,6 +18,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.skillItemContainer:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 530px) {

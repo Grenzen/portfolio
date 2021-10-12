@@ -1,8 +1,5 @@
-.App {
-
-}
-
 .contentContainer {
+    /*padding: 4rem 0;*/
     display: flex;
     flex-direction: row;
     margin: 0 auto;

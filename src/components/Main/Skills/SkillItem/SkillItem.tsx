@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import s from './SkillItem.module.css'
 import { SkillType } from '../Skills'
 
@@ -6,15 +7,17 @@ type SkillItemPropType = SkillType
 
 export const SkillItem: React.FC<SkillItemPropType> = React.memo((
     {
-        description, imageSrc,
+        title, imageSrc,
     }) => {
+    const { t } = useTranslation()
+
     return (
         <div className={ s.skillItemContainer }>
             <div
                 className={ s.skillItemImage }
                 style={ { backgroundImage: `url(${ imageSrc })` } }
             ></div>
-            <article className={ s.skillItemDescription }>{ description }</article>
+            <article className={ s.skillItemDescription }>{ t(`skills.${ title.toLowerCase() }`) }</article>
         </div>
     )
 })
