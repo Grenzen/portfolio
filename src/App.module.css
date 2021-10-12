@@ -1,0 +1,16 @@
+.App {
+
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 144rem;
+    padding: 1rem 0;
+    border: 1px solid black;
+}
+
+.sectionTitle {
+    align-self: center;
+}

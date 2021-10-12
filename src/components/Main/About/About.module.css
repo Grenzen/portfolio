@@ -1,0 +1,23 @@
+.sectionAbout {
+    padding: 1rem;
+    background-color: bisque;
+}
+
+.aboutContainer {
+    justify-content: space-evenly;
+}
+
+.aboutArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 530px) {
+    .aboutContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

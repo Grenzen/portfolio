@@ -1,0 +1,17 @@
+.headerNav {
+    margin-left: auto;
+}
+
+.headerNavList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerNavItem {
+    padding: 0 1rem;
+}
+
+.headerNavLink {
+    text-decoration: none;
+}

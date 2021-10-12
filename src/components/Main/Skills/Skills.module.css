@@ -1,0 +1,21 @@
+.sectionSkills {
+    padding: 1rem;
+    background-color: aquamarine;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsItemsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 530px) {
+    .skillsItemsContainer {
+        align-items: center;
+    }
+}

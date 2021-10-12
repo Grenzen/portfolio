@@ -1,0 +1,62 @@
+.projectItemContainer {
+    position: relative;
+    padding: 1rem;
+    width: 40%;
+    background-color: rgba(115, 113, 113, 0.73);
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+
+.projectItemImage {
+    width: auto;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.5s ease;
+}
+
+.projectItemLink {
+    cursor: pointer;
+    text-decoration: none;
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    padding: 1rem 2rem;
+    background-color: cornflowerblue;
+    color: azure;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.projectItemContainer:hover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.projectItemContainer:hover .projectItemImage {
+    opacity: 0.5;
+}
+
+.projectItemContainer:hover .projectItemLink {
+    opacity: 1;
+}
+
+.projectItemLink:hover {
+    background-color: #93b4ee;
+}
+
+@media screen and (max-width: 570px) {
+    .projectItemContainer {
+        margin: 1rem;
+        width: 70%;
+    }
+
+    .projectItemImage {
+        height: 22rem;
+    }
+}

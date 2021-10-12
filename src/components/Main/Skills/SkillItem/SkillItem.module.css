@@ -1,0 +1,33 @@
+.skillItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 25%;
+    background-color: azure;
+    border-radius: 1rem;
+    -webkit-box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
+    -moz-box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
+    box-shadow: 1px 1px 12px 3px rgba(45, 52, 58, 0.2);
+}
+
+.skillItemImage {
+    width: 10rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media screen and (max-width: 530px) {
+    .skillItemContainer {
+        margin: 1rem;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skillItemContainer {
+        width: 60%;
+    }
+}
