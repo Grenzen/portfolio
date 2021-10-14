@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contacts": "Contacts"
+  },
+  "about": {
+    "fullName": "Margarita Trutneva",
+    "subtitle": "Junior Front-end Developer"
+  },
+  "skills": {
+    "title": "Skills",
+    "css": "Text for css",
+    "html": "Text for html",
+    "react": "Text for react"
+  },
+  "projects": {
+    "title": "Projects",
+    "link": "Show",
+    "qr-menu": "The QR Menu application for cafes and restaurants, for viewing menus, forming and tracking orders from individual devices of guests.",
+    "covid-19": "The Covid-19 Dashboard website shows statistics of cases, recovered and deaths around the world and by country for the entire period and for the last day."
+  },
+  "contacts": {
+    "title": "Contacts",
+    "button": "Send"
+  },
+  "footer": {
+    "fullName": "Margarita Trutneva",
+    "copyright": "©2021 All rights reserved"
+  }
+}

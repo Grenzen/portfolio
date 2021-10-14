@@ -11,7 +11,7 @@ export const ProjectItem: React.FC<ProjectType> = React.memo((
     const { t } = useTranslation()
     return (
         <div className={ s.projectItemContainer }>
-            <div style={ { backgroundImage: `url(${ projectImageSrc })` } }
+            <div style={ { backgroundImage: `url(${ process.env.PUBLIC_URL }${ projectImageSrc })` } }
                  className={ s.projectItemImage }
             >
             </div>

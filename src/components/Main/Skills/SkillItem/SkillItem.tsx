@@ -15,7 +15,7 @@ export const SkillItem: React.FC<SkillItemPropType> = React.memo((
         <div className={ s.skillItemContainer }>
             <div
                 className={ s.skillItemImage }
-                style={ { backgroundImage: `url(${ imageSrc })` } }
+                style={ { backgroundImage: `url(${ process.env.PUBLIC_URL }${ imageSrc })` } }
             ></div>
             <article className={ s.skillItemDescription }>{ t(`skills.${ title.toLowerCase() }`) }</article>
         </div>
